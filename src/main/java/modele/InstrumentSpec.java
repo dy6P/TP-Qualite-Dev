@@ -16,7 +16,22 @@ public abstract class InstrumentSpec {
     }
 
     public boolean matches(InstrumentSpec spec) {
-
+        if (this.getBuilder() != spec.getBuilder()) {
+            return false;
+        }
+        if (!this.getModel().equalsIgnoreCase(spec.getModel())) {
+            return false;
+        }
+        if (this.getType() != spec.getType()) {
+            return false;
+        }
+        if (this.getBackWood() != spec.getBackWood()) {
+            return false;
+        }
+        if (this.getTopWood() != spec.getTopWood()) {
+            return false;
+        }
+        return true;
     }
 
     public Builder getBuilder() {
@@ -26,6 +41,7 @@ public abstract class InstrumentSpec {
     public String getModel() {
         return model;
     }
+
     public Type getType() {
         return type;
     }
