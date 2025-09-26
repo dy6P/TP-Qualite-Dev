@@ -1,6 +1,6 @@
 package modele;
 
-public class InstrumentSpec {
+public abstract class InstrumentSpec {
     Builder builder;
     String model;
     Type type;
@@ -15,7 +15,8 @@ public class InstrumentSpec {
         this.topWood = topWood;
     }
 
-    public boolean matches(InstrumentSpec searchSpec) {
+    public boolean matches(InstrumentSpec spec) {
+
     }
 
     public Builder getBuilder() {

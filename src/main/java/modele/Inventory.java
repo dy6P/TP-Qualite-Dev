@@ -10,8 +10,8 @@ public class Inventory {
         instruments = new LinkedList();
     }
 
-    public void addInstrument(String serialNumber, double price, InstrumentSpec instruSpec) {
-        instruments.add(InstrumentFactory.createInstrument(serialNumber, price, instruSpec));
+    public void addInstrument(String serialNumber, double price, InstrumentSpec spec) {
+        instruments.add(InstrumentFactory.createInstrument(serialNumber, price, spec));
     }
 
     public Instrument getInstrument(String serialNumber) {
@@ -30,7 +30,7 @@ public class Inventory {
             Instrument instrument = (Instrument) i.next();
             InstrumentSpec instruSpec = instrument.getInstrumentSpec();
             if (instruSpec.matches(searchSpec)) {
-
+                matchingInstruments.add(instrument);
             }
         }
         return matchingInstruments;
