@@ -1,4 +1,4 @@
-package modele;
+package inventory_of_stringed_instruments.modele;
 
 public enum Style {
     A, B, C, D, E, F;

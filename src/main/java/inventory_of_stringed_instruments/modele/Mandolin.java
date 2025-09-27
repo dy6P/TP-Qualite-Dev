@@ -1,4 +1,4 @@
-package modele;
+package inventory_of_stringed_instruments.modele;
 
 public class Mandolin extends Instrument {
 

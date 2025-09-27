@@ -1,4 +1,4 @@
-package modele;
+package inventory_of_stringed_instruments.modele;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;

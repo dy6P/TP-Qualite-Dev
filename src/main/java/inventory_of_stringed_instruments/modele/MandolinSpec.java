@@ -1,4 +1,4 @@
-package modele;
+package inventory_of_stringed_instruments.modele;
 
 public class MandolinSpec extends InstrumentSpec {
     private Style style;

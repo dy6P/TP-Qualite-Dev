@@ -1,4 +1,4 @@
-package modele;
+package inventory_of_stringed_instruments.modele;
 
 public class GuitarSpec extends InstrumentSpec {
     private int numStrings;
