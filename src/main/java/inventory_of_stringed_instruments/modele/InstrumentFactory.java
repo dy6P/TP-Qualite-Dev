@@ -1,6 +1,6 @@
 package inventory_of_stringed_instruments.modele;
 
-public abstract class InstrumentFactory {
+public class InstrumentFactory {
     public static Instrument createInstrument(String serialNumber, double price, InstrumentSpec spec) {
         Instrument instrument = null;
         if (spec instanceof GuitarSpec) {
