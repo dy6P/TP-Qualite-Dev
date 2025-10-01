@@ -6,7 +6,8 @@ public class Mandolin extends Instrument {
         super(serialNumber, price, spec);
     }
 
+    @Override
     public String toString() {
-        return "\nMANDOLIN\n\nNuméro de série : " + getSerialNumber() + "\n" + "Prix            : " + getPrice() + " $\n" + getInstrumentSpec() + "\n";
+        return "\nMANDOLIN\n\n" + super.toString() + getInstrumentSpec() + "\n";
     }
 }

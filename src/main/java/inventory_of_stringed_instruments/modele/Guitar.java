@@ -6,7 +6,8 @@ public class Guitar extends Instrument {
         super(serialNumber, price, spec);
     }
 
+    @Override
     public String toString() {
-        return "\nGUITAR\n\nNuméro de série  : " + getSerialNumber() + "\n" + "Prix             : " + getPrice() + " $\n" + getInstrumentSpec() + "\n";
+        return "\nGUITAR\n\n" + super.toString() + getInstrumentSpec() + "\n";
     }
 }

@@ -1,6 +1,14 @@
 package inventory_of_stringed_instruments.modele;
 
 public class InstrumentFactory {
+
+    /**
+     * Créer un instrument en fonction de la classe de l'objet
+     * @param serialNumber, le numéro de sétrie (de type String)
+     * @param price, le prix (de type double)
+     * @param spec, les spécifications (de type InstrumentSpec)
+     * @return un objet de type Instrument
+     */
     public static Instrument createInstrument(String serialNumber, double price, InstrumentSpec spec) {
         Instrument instrument = null;
         if (spec instanceof GuitarSpec) {

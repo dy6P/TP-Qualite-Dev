@@ -8,6 +8,12 @@ public class MandolinSpec extends InstrumentSpec {
         this.style = style;
     }
 
+    /**
+     * Vérifie si les spécifications en paramètre sont les mêmes que celles de l'objet appelant
+     * @param spec, les spécifications (de type InstrumentSpec)
+     * @return un boolean
+     */
+    @Override
     public boolean matches(InstrumentSpec spec) {
         if (!(spec instanceof MandolinSpec)) {
             return false;
@@ -22,6 +28,7 @@ public class MandolinSpec extends InstrumentSpec {
         return style;
     }
 
+    @Override
     public String toString() {
-        return  "Builder         : " + getBuilder() + "\n" + "Modèle          : " + getModel() + "\n" + "Type            : " + getType() + "\n" + "BackWood        : " + getBackWood() + "\n" + "TopWood         : " + getTopWood() + "\n" + "Style           : " + getStyle();    }
+        return  super.toString() + "Style            : " + getStyle();    }
 }

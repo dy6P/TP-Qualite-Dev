@@ -15,6 +15,11 @@ public abstract class InstrumentSpec {
         this.topWood = topWood;
     }
 
+    /**
+     * Vérifie si les spécifications en paramètre sont les mêmes que celles de l'objet appelant
+     * @param spec, les spécifications (de type InstrumentSpec)
+     * @return un boolean
+     */
     public boolean matches(InstrumentSpec spec) {
         if (this.getBuilder() != spec.getBuilder()) {
             return false;
@@ -52,5 +57,9 @@ public abstract class InstrumentSpec {
 
     public Wood getTopWood() {
         return topWood;
+    }
+
+    public String toString() {
+        return  "Builder          : " + getBuilder() + "\n" + "Modèle           : " + getModel() + "\n" + "Type             : " + getType() + "\n" + "BackWood         : " + getBackWood() + "\n" + "TopWood          : " + getTopWood() + "\n";
     }
 }

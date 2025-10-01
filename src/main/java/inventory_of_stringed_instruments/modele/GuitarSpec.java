@@ -8,6 +8,12 @@ public class GuitarSpec extends InstrumentSpec {
         this.numStrings = numStrings;
     }
 
+    /**
+     * Vérifie si les spécifications en paramètre sont les mêmes que celles de l'objet appelant
+     * @param spec, les spécifications (de type InstrumentSpec)
+     * @return un boolean
+     */
+    @Override
     public boolean matches(InstrumentSpec spec) {
         if (!(spec instanceof GuitarSpec)) {
             return false;
@@ -22,7 +28,8 @@ public class GuitarSpec extends InstrumentSpec {
         return numStrings;
     }
 
+    @Override
     public String toString() {
-        return  "Builder          : " + getBuilder() + "\n" + "Modèle           : " + getModel() + "\n" + "Type             : " + getType() + "\n" + "BackWood         : " + getBackWood() + "\n" + "TopWood          : " + getTopWood() + "\n" + "Nombre de cordes : " + getNumStrings();    }
+         return super.toString() + "Nombre de cordes : " + getNumStrings();    }
     }
 
