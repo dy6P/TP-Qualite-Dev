@@ -1,11 +1,11 @@
 package inventory_of_stringed_instruments.modele;
 
 public abstract class InstrumentSpec {
-    Builder builder;
-    String model;
-    Type type;
-    Wood backwood;
-    Wood topWood;
+    private Builder builder;
+    private String model;
+    private Type type;
+    private Wood backwood;
+    private Wood topWood;
 
     public InstrumentSpec(Builder builder, String model, Type type, Wood backWood, Wood topWood) {
         this.builder = builder;

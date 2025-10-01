@@ -21,4 +21,7 @@ public class MandolinSpec extends InstrumentSpec {
     public Style getStyle() {
         return style;
     }
+
+    public String toString() {
+        return  "Builder         : " + getBuilder() + "\n" + "Modèle          : " + getModel() + "\n" + "Type            : " + getType() + "\n" + "BackWood        : " + getBackWood() + "\n" + "TopWood         : " + getTopWood() + "\n" + "Style           : " + getStyle();    }
 }

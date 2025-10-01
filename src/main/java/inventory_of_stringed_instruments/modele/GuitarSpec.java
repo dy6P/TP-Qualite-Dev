@@ -21,4 +21,8 @@ public class GuitarSpec extends InstrumentSpec {
     public int getNumStrings() {
         return numStrings;
     }
-}
+
+    public String toString() {
+        return  "Builder          : " + getBuilder() + "\n" + "Modèle           : " + getModel() + "\n" + "Type             : " + getType() + "\n" + "BackWood         : " + getBackWood() + "\n" + "TopWood          : " + getTopWood() + "\n" + "Nombre de cordes : " + getNumStrings();    }
+    }
+
