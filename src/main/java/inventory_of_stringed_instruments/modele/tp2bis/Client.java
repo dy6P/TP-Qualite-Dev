@@ -1,4 +1,6 @@
-package inventory_of_stringed_instruments.modele;
+package inventory_of_stringed_instruments.modele.tp2bis;
+import inventory_of_stringed_instruments.modele.*;
+
 import java.util.List;
 
 public class Client {

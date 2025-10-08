@@ -1,4 +1,4 @@
-package inventory_of_stringed_instruments.modele;
+package inventory_of_stringed_instruments.modele.tp2bis;
 
 public class Guitar extends Instrument {
 

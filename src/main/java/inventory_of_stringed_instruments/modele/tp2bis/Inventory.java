@@ -1,4 +1,5 @@
-package inventory_of_stringed_instruments.modele;
+package inventory_of_stringed_instruments.modele.tp2bis;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;

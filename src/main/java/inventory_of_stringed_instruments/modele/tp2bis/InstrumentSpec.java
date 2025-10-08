@@ -1,4 +1,8 @@
-package inventory_of_stringed_instruments.modele;
+package inventory_of_stringed_instruments.modele.tp2bis;
+
+import inventory_of_stringed_instruments.modele.Builder;
+import inventory_of_stringed_instruments.modele.Type;
+import inventory_of_stringed_instruments.modele.Wood;
 
 public abstract class InstrumentSpec {
     private Builder builder;
