@@ -1,7 +1,7 @@
-package inventory_of_stringed_instruments.modele;
+package inventory_of_stringed_instruments.enumType;
 
 public enum Specification {
-    BUILDER, MODEL, TYPE, BACKWOOD, TOPWOOD, STYLE, NUMBEROFSTRINGS, FABRICATIONYEAR;
+    BUILDER, MODEL, TYPE, BACKWOOD, TOPWOOD, STYLE, NUMBER_OF_STRINGS, YEAR_OF_MANUFACTURE, INSTRUMENT_TYPE;
 
     public String toString() {
         switch (this) {
@@ -11,8 +11,9 @@ public enum Specification {
             case BACKWOOD: return "Backwood";
             case TOPWOOD: return "Topwood";
             case STYLE: return "Style";
-            case NUMBEROFSTRINGS: return "NumberOfStrings";
-            case FABRICATIONYEAR: return "FabricationYear";
+            case NUMBER_OF_STRINGS: return "NumberOfStrings";
+            case YEAR_OF_MANUFACTURE: return "FabricationYear";
+            case INSTRUMENT_TYPE: return "InstrumentType";
             default: return "Unspecified";
         }
     }

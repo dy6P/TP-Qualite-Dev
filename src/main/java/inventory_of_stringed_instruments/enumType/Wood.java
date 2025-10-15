@@ -1,4 +1,4 @@
-package inventory_of_stringed_instruments.modele;
+package inventory_of_stringed_instruments.enumType;
 
 public enum Wood {
     INDIAN_ROSEWOOD, SITKA, ALDER, MAHOGANY, ADIRONDACK, BRAZILIAN_ROSEWOOD, CEDAR, COCOBOLO, MAPLE;

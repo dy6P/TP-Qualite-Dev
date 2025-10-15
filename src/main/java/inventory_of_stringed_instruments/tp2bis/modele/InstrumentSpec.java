@@ -1,15 +1,15 @@
-package inventory_of_stringed_instruments.modele.tp2bis;
+package inventory_of_stringed_instruments.tp2bis.modele;
 
-import inventory_of_stringed_instruments.modele.Builder;
-import inventory_of_stringed_instruments.modele.Type;
-import inventory_of_stringed_instruments.modele.Wood;
+import inventory_of_stringed_instruments.enumType.Builder;
+import inventory_of_stringed_instruments.enumType.Type;
+import inventory_of_stringed_instruments.enumType.Wood;
 
 public abstract class InstrumentSpec {
-    private Builder builder;
-    private String model;
-    private Type type;
-    private Wood backwood;
-    private Wood topWood;
+    protected Builder builder;
+    protected String model;
+    protected Type type;
+    protected Wood backwood;
+    protected Wood topWood;
 
     public InstrumentSpec(Builder builder, String model, Type type, Wood backWood, Wood topWood) {
         this.builder = builder;

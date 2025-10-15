@@ -1,4 +1,4 @@
-package inventory_of_stringed_instruments.modele.tp2bis;
+package inventory_of_stringed_instruments.tp2bis.modele;
 
 public class InstrumentFactory {
 

@@ -1,6 +1,8 @@
-package inventory_of_stringed_instruments.modele.tp2bis;
+package inventory_of_stringed_instruments.tp3.modele;
 
-public abstract class Instrument {
+import inventory_of_stringed_instruments.tp3.modele.InstrumentSpec;
+
+public class Instrument {
     private String serialNumber;
     private double price;
     private InstrumentSpec spec;
@@ -24,6 +26,6 @@ public abstract class Instrument {
     }
 
     public String toString(){
-        return "Numéro de série  : " + getSerialNumber() + "\n" + "Prix             : " + getPrice() + " $\n";
+        return "\nNuméro de série  : " + getSerialNumber() + "\n" + "Prix             : " + getPrice() + " $\n" + spec.toString();
     }
 }

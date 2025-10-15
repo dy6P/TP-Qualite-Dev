@@ -1,15 +1,11 @@
-package inventory_of_stringed_instruments.modele.tp3;
-
-import inventory_of_stringed_instruments.modele.tp2bis.Instrument;
-import inventory_of_stringed_instruments.modele.tp2bis.InstrumentFactory;
-import inventory_of_stringed_instruments.modele.tp2bis.InstrumentSpec;
+package inventory_of_stringed_instruments.tp2bis.modele;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Inventory {
-    private List<inventory_of_stringed_instruments.modele.tp2bis.Instrument> instruments;
+    private List<Instrument> instruments;
 
     public Inventory() {
         instruments = new LinkedList();
@@ -21,7 +17,7 @@ public class Inventory {
      * @param price, le prix (de type double)
      * @param spec, les spécicifications (de type InstrumentSpec)
      */
-    public void addInstrument(String serialNumber, double price, inventory_of_stringed_instruments.modele.tp2bis.InstrumentSpec spec) {
+    public void addInstrument(String serialNumber, double price, InstrumentSpec spec) {
         instruments.add(InstrumentFactory.createInstrument(serialNumber, price, spec));
     }
 
@@ -30,9 +26,9 @@ public class Inventory {
      * @param serialNumber, le numéro de série (de type String)
      * @return un objet de type Instrument
      */
-    public inventory_of_stringed_instruments.modele.tp2bis.Instrument getInstrument(String serialNumber) {
+    public Instrument getInstrument(String serialNumber) {
         for (Iterator i = instruments.iterator(); i.hasNext(); ) {
-            inventory_of_stringed_instruments.modele.tp2bis.Instrument instrument = (inventory_of_stringed_instruments.modele.tp2bis.Instrument) i.next();
+            Instrument instrument = (Instrument) i.next();
             if (instrument.getSerialNumber().equals(serialNumber)) {
                 return instrument;
             }
@@ -45,10 +41,10 @@ public class Inventory {
      * @param searchSpec, un objet (de type InstrumentSpec)
      * @return une liste chaînée
      */
-    public List search(inventory_of_stringed_instruments.modele.tp2bis.InstrumentSpec searchSpec) {
+    public List search(InstrumentSpec searchSpec) {
         List matchingInstruments = new LinkedList();
         for (Iterator i = instruments.iterator(); i.hasNext(); ) {
-            inventory_of_stringed_instruments.modele.tp2bis.Instrument instrument = (Instrument) i.next();
+            Instrument instrument = (Instrument) i.next();
             InstrumentSpec instruSpec = instrument.getInstrumentSpec();
             if (instruSpec.matches(searchSpec)) {
                 matchingInstruments.add(instrument);

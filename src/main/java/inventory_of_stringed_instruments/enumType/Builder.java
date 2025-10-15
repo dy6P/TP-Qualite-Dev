@@ -1,4 +1,4 @@
-package inventory_of_stringed_instruments.modele;
+package inventory_of_stringed_instruments.enumType;
 
 public enum Builder {
     FENDER, MARTIN, GIBSON, COLLINGS, OLSON, RYAN, PRS, ANY;

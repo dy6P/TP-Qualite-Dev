@@ -1,4 +1,7 @@
-package inventory_of_stringed_instruments.modele.tp2bis;
+package inventory_of_stringed_instruments.tp3.modele;
+
+import inventory_of_stringed_instruments.tp3.modele.Instrument;
+import inventory_of_stringed_instruments.tp3.modele.InstrumentSpec;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -13,12 +16,10 @@ public class Inventory {
 
     /**
      * Ajoute un instrument grâce à son numéro de série, à son prix, et à ses spécifications
-     * @param serialNumber, le numéro de série (de type String)
-     * @param price, le prix (de type double)
-     * @param spec, les spécicifications (de type InstrumentSpec)
+     * @param instrument, l'instrument de type Instrsument à ajouter
      */
-    public void addInstrument(String serialNumber, double price, InstrumentSpec spec) {
-        instruments.add(InstrumentFactory.createInstrument(serialNumber, price, spec));
+    public void addInstrument(Instrument instrument) {
+        instruments.add(instrument);
     }
 
     /**

@@ -1,5 +1,11 @@
-package inventory_of_stringed_instruments.modele.tp2bis;
-import inventory_of_stringed_instruments.modele.*;
+package inventory_of_stringed_instruments.tp2bis;
+import inventory_of_stringed_instruments.enumType.Builder;
+import inventory_of_stringed_instruments.enumType.Style;
+import inventory_of_stringed_instruments.enumType.Type;
+import inventory_of_stringed_instruments.enumType.Wood;
+import inventory_of_stringed_instruments.tp2bis.modele.GuitarSpec;
+import inventory_of_stringed_instruments.tp2bis.modele.Inventory;
+import inventory_of_stringed_instruments.tp2bis.modele.MandolinSpec;
 
 import java.util.List;
 

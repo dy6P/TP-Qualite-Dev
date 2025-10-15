@@ -1,4 +1,4 @@
-package inventory_of_stringed_instruments.modele;
+package inventory_of_stringed_instruments.enumType;
 
 public enum Type {
     ACOUSTIC, ELECTRIC;
