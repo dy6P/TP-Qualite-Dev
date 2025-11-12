@@ -1,5 +1,5 @@
 package tp4.OCP.modele;
 
-public interface Criteria {
+public interface Criteria <Product> {
     boolean isSatisfied(Product product);
 }

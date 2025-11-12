@@ -1,9 +1,6 @@
 package tp4.OCP;
 
-import tp4.OCP.modele.Color;
-import tp4.OCP.modele.Product;
-import tp4.OCP.modele.ProductFilter;
-import tp4.OCP.modele.Size;
+import tp4.OCP.modele.*;
 
 import java.util.List;
 
@@ -18,10 +15,10 @@ public class Client {
 
         ProductFilter filter = new ProductFilter();
         System.out.println("Green products : ");
-        filter.filterByColor(products, Color.GREEN).forEach(product -> System.out.println(product.name + " is green."));
+        filter.filterProducts(products, new ColorCriteria(Color.GREEN)).forEach(product -> System.out.println(product.name + " is green."));
         System.out.println("Large products : ");
-        filter.filterBySize(products, Size.LARGE).forEach(product -> System.out.println(product.name + " is large."));
+        filter.filterProducts(products, new SizeCriteria(Size.LARGE)).forEach(product -> System.out.println(product.name + " is large."));
         System.out.println("Blue and large products : ");
-        filter.filterBySizeAndColor(products, Size.LARGE, Color.BLUE).forEach(product -> System.out.println(product.name + " is blue and large."));
+        filter.filterProducts(products, new List<new SizeCriteria()>).forEach(product -> System.out.println(product.name + " is blue and large."));
     }
 }
