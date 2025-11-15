@@ -5,7 +5,8 @@ import java.util.stream.Stream;
 
 public class ProductFilter {
 
-    public Stream<Product> filterProducts(List<Product> products, List<Criteria <Product>> criterias) {
-        return products.stream().filter(product -> criterias.forEach(criteria -> criteria.isSatisfied(product)));
+    public Stream<Product> filterCriterias(List<Product> products, List<Criteria<Product>> criterias) {
+        return products.stream().filter(product -> criterias.stream().allMatch(criteria -> criteria.isSatisfied(product)));
     }
 }
+

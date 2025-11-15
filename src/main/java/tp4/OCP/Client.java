@@ -1,7 +1,6 @@
 package tp4.OCP;
 
 import tp4.OCP.modele.*;
-
 import java.util.List;
 
 public class Client {
@@ -14,11 +13,14 @@ public class Client {
         List<Product> products = List.of(apple, tree, house, car);
 
         ProductFilter filter = new ProductFilter();
-        System.out.println("Green products : ");
-        filter.filterProducts(products, new ColorCriteria(Color.GREEN)).forEach(product -> System.out.println(product.name + " is green."));
-        System.out.println("Large products : ");
-        filter.filterProducts(products, new SizeCriteria(Size.LARGE)).forEach(product -> System.out.println(product.name + " is large."));
-        System.out.println("Blue and large products : ");
-        filter.filterProducts(products, new List<new SizeCriteria()>).forEach(product -> System.out.println(product.name + " is blue and large."));
+
+        System.out.println("\nGreen products :");
+        filter.filterCriterias(products, List.of(new ColorCriteria(Color.GREEN))).forEach(product -> System.out.println(product.name + " is green."));
+
+        System.out.println("\nLarge products :");
+        filter.filterCriterias(products, List.of(new SizeCriteria(Size.LARGE))).forEach(product -> System.out.println(product.name + " is large."));
+
+        System.out.println("\nBlue and large products :");
+        filter.filterCriterias(products, List.of(new SizeCriteria(Size.LARGE), new ColorCriteria(Color.BLUE))).forEach(product -> System.out.println(product.name + " is blue and large."));
     }
 }
