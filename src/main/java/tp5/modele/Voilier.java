@@ -4,7 +4,20 @@ public abstract class Voilier {
     protected String nom;
     protected SuivreRoute suivreRoute;
 
+    public Voilier(String nom, SuivreRoute suivreRoute) {
+        this.nom = nom;
+        this.suivreRoute = suivreRoute;
+    }
+
+    public void appliquerSuivreRoute() {
+        this.suivreRoute.suivreRoute();
+    }
+
+    public void setSuivreRoute(SuivreRoute suivreRoute) {
+        this.suivreRoute = suivreRoute;
+    }
+
     public String toString() {
-        return "Nom du voilier => " + this.nom;
+        return "NOM   = " + this.nom;
     }
 }
